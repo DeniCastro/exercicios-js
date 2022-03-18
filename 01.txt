@@ -31,6 +31,12 @@ var valor1 = prompt('Digite o primeiro valor da soma: ')
 var valor2 = prompt('Digite o segundo valor: ')
 soma = parseInt(valor1) + parseInt(valor2)
 alert('O valor da soma é ' + soma)
+// também é possível assim:
+n1 = Number(prompt('Digite o primeiro numero: '))
+n2 = Number(prompt('Digite o segundo numero: '))
+soma = valor1 + valor2
+alert('O total é: ' + soma)
+
 
 // 3. Escreva um programa que receba o valor do lado de um quadrado em cm e calcule o perímetro do quadrado.
 
