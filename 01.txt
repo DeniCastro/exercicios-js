@@ -1,3 +1,6 @@
+// Os exercícios a seguir foram solucionados usando o Console do Google Chrome, conforme ensinado na aula 1 de CPII da FlexPeak.
+
+
 // 1. Crie 5 variáveis de cada tipo abaixo:
 
 -Number:
@@ -20,3 +23,31 @@ meuNome == 'Denis'
 apelido == 'Denilson'
 pet == 'Rex'
 minhaIdade = 18
+
+
+// 2. Escreva um programa que receba dois valores do usuário, some eles e exiba a soma final.
+
+var valor1 = prompt('Digite o primeiro valor da soma: ')
+var valor2 = prompt('Digite o segundo valor: ')
+soma = parseInt(valor1) + parseInt(valor2)
+alert('O valor da soma é ' + soma)
+
+// 3. Escreva um programa que receba o valor do lado de um quadrado em cm e calcule o perímetro do quadrado.
+
+var lado = prompt('Digite o tamanho dos lados: ')
+var perimetro = lado * 4
+alert('O perímetro do quadrado é de: ' + perimetro + 'cm')
+
+// 10. Escreva um programa que faça uma pergunta para o usuário e dê 5 alternativas. O usuário deverá escolher uma alternativa e você deverá dizer se a alternativa está certa ou errada. 
+
+confirm ("Iniciar Jogo?? ")
+resposta = prompt('O que é, o que é? Não é vivo, mas cresce. Não tem pulmões, mas precisa de ar. Não tem boca, mas a água pode matá-lo. a - caverna / b - pessoa / c - fogo / d - coração .')
+if (resposta == 'c') {
+    alert("ACERTOU! ")
+} else if (resposta == 'fogo') {
+    alert("Muito bem!")
+} else {
+    alert('ERROU!')
+}
+
+===============        //       ===============        //         ===============        //    
