@@ -1,0 +1,22 @@
+// 1. Crie 5 variáveis de cada tipo abaixo:
+
+-Number:
+var minhaIdade = 25
+var minhaAltura = 1.84
+var meuPeso = 80
+var meuNumero = 13
+var minhaCasa = 10
+
+-String:
+var meuNome = 'Denilson'
+var sobrenome = 'Castro'
+var ultimonome = 'Oliveira'
+var apelido = 'Deni'
+var pet = 'Ash'
+
+-Boolean:
+1 + 1 == 3
+meuNome == 'Denis'
+apelido == 'Denilson'
+pet == 'Rex'
+minhaIdade = 18
