@@ -85,8 +85,41 @@ if (vel > 60) {
 
 
 // 8. Escreva um programa que receba a quantidade de litros que um motorista abasteceu o carro dele e calcule o valor que ele irá pagar. Ele poderá escolher entre álcool e gasolina. O valor do álcool é R$ 4,01 por litro e o valor da gasolina é R$ 5,99 por litro.
+l = prompt ('Quantos litros deseja abastecer?')
+c = prompt ('O que deseja abastecer: [1]- Gasolina  /  [2] - Etanol')
+pagar = 0
+if (c == 1) {
+    pagar = l * 5.99
+    alert('Total a pagar: R$' + pagar.toFixed(2)) // ".toFixed(2)" irá remover os números Float
+} else if (c == 2) {
+    pagar = l * 4.01
+    alert('Total a pagar: R$' + pagar.toFixed(2))
+} else {
+    alert('OPERAÇÃO INVÁLIDA!')
+}
 
 
+// 9. Escreva um programa que receba dois valores. Após isso, o usuário deverá escolher se deseja somar, subtrair, dividir ou multiplicar esses valores. O resultado final deverá ser exibido. 
+
+v1 = Number(prompt('Insira o primeiro valor: '))
+v2 = Number(prompt ('Agora, o segundo: '))
+total = 0
+op = prompt ('Qual operação deseja realizar:\n[1] - Soma \n[2] - Subtração\n[3] - Multiplicação\n[4] - Divisão')
+if (op == 1) {
+    total = v1 + v2
+    alert ('O resultado é: ' + total)
+} else if (op == 2) {
+    total = v1 - v2
+    alert ('O resultado é: ' + total)
+} else if (op == 3) {
+    total = v1 * v2
+    alert ('O resultado é: ' + total)
+} else if (op == 4) {
+    total = v1 / v2
+    alert ('O resultado é: ' + total)
+} else {
+    alert('Operação Inválida')
+}
 
 
 // 10. Escreva um programa que faça uma pergunta para o usuário e dê 5 alternativas. O usuário deverá escolher uma alternativa e você deverá dizer se a alternativa está certa ou errada. 
