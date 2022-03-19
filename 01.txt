@@ -32,8 +32,8 @@ var valor2 = prompt('Digite o segundo valor: ')
 soma = parseInt(valor1) + parseInt(valor2)
 alert('O valor da soma é ' + soma)
 // também é possível assim:
-n1 = Number(prompt('Digite o primeiro numero: '))
-n2 = Number(prompt('Digite o segundo numero: '))
+valor1 = Number(prompt('Digite o primeiro numero: '))
+valor2 = Number(prompt('Digite o segundo numero: '))
 soma = valor1 + valor2
 alert('O total é: ' + soma)
 
@@ -75,24 +75,30 @@ if (idade <=10) {
 
 // 7. Escreva um programa que receba a velocidade do carro em km/h e calcule a multa recebida pelo motorista. A regra é a segunte, o limite da via é 60 km/h, para cada km excedido o motorista irá receber R$ 3,99 de multa.
 
+const = MAX_VIA
 vel = prompt('Qual a velocidade do carro? ')
-var multa = (vel - 60) * 3.99
-if (vel > 60) {
-    alert("MULTADO! pague R$ " + multa)
+if (vel > MAX_VIA) {
+    var multa = (vel - 60) * 3.99
+    alert("MULTADO! pague R$ " + multa.toFixed(2))
 } else {
     alert("Tudo certo, tenha um ótimo dia!")
 }
 
 
 // 8. Escreva um programa que receba a quantidade de litros que um motorista abasteceu o carro dele e calcule o valor que ele irá pagar. Ele poderá escolher entre álcool e gasolina. O valor do álcool é R$ 4,01 por litro e o valor da gasolina é R$ 5,99 por litro.
-l = prompt ('Quantos litros deseja abastecer?')
-c = prompt ('O que deseja abastecer: [1]- Gasolina  /  [2] - Etanol')
+
+const LITRO_GASOLINA = 5.99
+const LITRO_ALCOOL = 4.01
+
+combustivel = prompt ('O que deseja abastecer:\n[1]- Gasolina\n[2] - Etanol')
+litros = prompt ('Quantos litros deseja abastecer?')
 pagar = 0
-if (c == 1) {
-    pagar = l * 5.99
+
+if (combustivel == 1) {
+    pagar = litros * LITRO_GASOLINA
     alert('Total a pagar: R$' + pagar.toFixed(2)) // ".toFixed(2)" irá remover os números Float
-} else if (c == 2) {
-    pagar = l * 4.01
+} else if (combustivel == 2) {
+    pagar = litros * LITRO_ALCOOL
     alert('Total a pagar: R$' + pagar.toFixed(2))
 } else {
     alert('OPERAÇÃO INVÁLIDA!')
@@ -120,6 +126,9 @@ if (op == 1) {
 } else {
     alert('Operação Inválida')
 }
+if(typeof resultado != 'undefined') {
+alert("O resultado é " +resultado)
+
 
 
 // 10. Escreva um programa que faça uma pergunta para o usuário e dê 5 alternativas. O usuário deverá escolher uma alternativa e você deverá dizer se a alternativa está certa ou errada. 
