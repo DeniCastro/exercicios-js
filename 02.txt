@@ -101,3 +101,18 @@ console.log('Total de mulheres: ' + feminino);
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 // DESAFIO 5:
 
+var idades = [];
+var menorIdade = 9999;
+while(confirm('Deseja adicionar idades? ')){
+    idade = prompt('Digite uma idade: ')
+    idades.push(idade);
+    idades.forEach(function(valor, index) {
+        if (valor < menorIdade) {
+            menorIdade = valor;
+        }
+    });
+}
+console.log('A menor idade é: ' + menorIdade);
+
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
