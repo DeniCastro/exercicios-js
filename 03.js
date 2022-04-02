@@ -31,7 +31,7 @@ class Produto{
 }
 // Cria a class Cargo(recebe valor e percentual)
 class Cargo{
-    valor
+    nome
     percentual
 }
 
@@ -39,7 +39,11 @@ class Cargo{
 var vendedor1 = new Cargo()
 vendedor1.nome = 'Vendedor Nível 1'
 vendedor1.percentual = 0.05
- 
+
+var vendedor2 = new Cargo()
+vendedor2.nome = 'Vendedor Nível 2'
+vendedor2.percentual = 0.1
+
 // Agora, cria as variáveis dos produtos comprados(nome e valor)
 var nome = prompt("Digite o nome do produto")
 var valor = parseFloat(prompt("Digite o preco"))
